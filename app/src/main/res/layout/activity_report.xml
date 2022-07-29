@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reportActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:text="반환점 신고하기"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textColor="@android:color/black"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:weightSum="95">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="도매업자가 특별한 이유 없이 소매업자의
+            빈용기보증금 또는 취급수수료 지급을 거부하면
+            “과태료 처분의 대상”이 됩니다."
+            android:gravity="center|left"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"></TextView>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:text="- 재활용법 제15조의2제3항에 따라 보증금 반환을 거부할 경우, 300만원 이하의 과태료 처분을
+            하도록 하고 있으며"
+        android:gravity="center|left"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="
+같은 법 시행규칙 제12조의4 별표 5에 의하면 도매점은 빈용기를 훼손되지 않도록 신속하게 회수하도록 규정하고 있습니다."
+            android:gravity="center|left"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            android:padding="100dp">
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="신고하기"
+            android:textSize="24dp"
+            android:id="@+id/btnReportCall"
+            android:onClick="builStart"
+            ></Button>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="버튼을 누르면 빈용기 보증금 상담 센터로 연결 됩니다."
+        android:textSize="13dp"
+        android:gravity="center|top"
+        android:paddingLeft="13dp"
+        android:textColor="@android:color/black"></TextView>
+
+
+</LinearLayout>

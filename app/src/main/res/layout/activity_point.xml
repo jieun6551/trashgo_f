@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pointActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+
+    <!-- 적립내역 화면 타이틀 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+        <!-- 사용자 프로필 이미지 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35">
+
+        </LinearLayout>
+
+
+        <!-- 사용자 계정 및 포인트 표시 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="65"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+            <!-- 사용자 계정명 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="60"
+                android:text="테스트 계정1 "
+                android:gravity="bottom|left"
+                android:paddingLeft="20sp"
+                android:paddingBottom="10dp"
+                android:textSize="29sp"
+                android:textColor="@android:color/black"
+                />
+
+            <!--사용자 포인트 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="40"
+                android:text="1,285 포인트 "
+                android:gravity="top|left"
+                android:paddingLeft="20sp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 적립내역 리스트 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="적립내역"
+            android:textSize="24dp"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/black"></TextView>
+    </LinearLayout>
+
+    <!-- 환급신청 버튼 및 안내문구  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:text="환급 신청"
+            android:textSize="18dp"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="1,000 포인트 이상 환급이 가능합니다."
+            android:textSize="13dp"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:textColor="@android:color/black"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".entryActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:text="빈 용기 입력"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textColor="@android:color/black"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="주소는 현 위치 고정입니다."
+        android:gravity="center"
+        android:textSize="13dp"
+        ></TextView>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:padding="70dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="70dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="94"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:text="제목"
+                android:textSize="18dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:text="제목은 자유롭게 수정 가능합니다. (15자 이내)"
+                android:textSize="13dp"
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:orientation="vertical"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="70dp"></LinearLayout>
+
+            <Spinner
+                android:id="@+id/planets_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                ></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="70dp"></LinearLayout>
+
+            <Spinner
+                android:id="@+id/planets_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                ></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="70dp"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:text="반환금"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:text="반환금은 종류와 개수를 입력하면 자동으로 출력 됩니다."
+                android:textSize="13dp"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="70dp"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:text="등록"
+                android:textSize="18dp"
+                android:id="@+id/btnLogin"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>
+</LinearLayout>

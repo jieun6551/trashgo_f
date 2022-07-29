@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popupActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <!--사진 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:padding="100dp">
+    </LinearLayout>
+
+    <!-- 사용자 계정+주소 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <!-- 사용자 프로필 이미지 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+        </LinearLayout>
+
+        <!-- 사용자 계정 및 포인트 표시 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+            <!-- 사용자 계정명 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="60"
+                android:text="테스트 계정1 "
+                android:gravity="bottom|left"
+                android:paddingLeft="20sp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <!--사용자 주소-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="40"
+                android:text="사하구 다대동"
+                android:gravity="top|left"
+                android:paddingLeft="20sp"
+                android:textSize="19sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:text="소주병 가져가세요~"
+        android:gravity="bottom|left"
+        android:textSize="24dp"
+        android:textColor="@android:color/black"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="10분전"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:weightSum="90">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:text="종류"
+            android:gravity="center|left"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:text="개수"
+            android:gravity="center|left"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:text="반환금"
+            android:gravity="center|left"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:text="공병 위치에서만 수거 버튼이 활성화 됩니다."
+            android:textSize="13dp"
+            android:gravity="center|bottom"
+            android:paddingLeft="13dp"
+            android:textColor="@android:color/black"></TextView>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:text="수거"
+        android:textSize="18dp"
+        android:id="@+id/btnLogin"
+        ></Button>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
